@@ -1,306 +1,255 @@
+<!-- 강수정님 html 소스 -->
 <!DOCTYPE html>
 <html lang="ko">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>mega_coffee</title>
-        <link rel="stylesheet" href="./reset.css">
-        <link rel="stylesheet" href="./style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-    <body>
-        <!-- header -->
-        <header>
-            <h1>MEGA COFFEE</h1>
-            <img src="./image/logo_b.png" alt="logo_b">
-            <div id="mobile_menu_icon">
-                <div class="mobile_menu_icon_bar"></div>
-                <div class="mobile_menu_icon_bar"></div>
-                <div class="mobile_menu_icon_bar"></div>
+</head>
+
+<body>
+    <header>
+        <h1><span>WONDER</span> PLACE</h1>
+        <!-- pc_menu -->
+        <ul>
+            <li class="li_under_line">COMPANY</li>
+            <li class="li_under_line">RECRUIT</li>
+            <li class="li_under_line">BRAND</li>
+            <li class="li_under_line">SHOP</li>
+            <li class="li_under_line">CONTACT</li>
+        </ul>
+        <div id="menu_icon">
+            <div class="menu_icon_bar"></div>
+            <div class="menu_icon_bar"></div>
+            <div class="menu_icon_bar"></div>
+        </div>
+    </header>
+    <!-- menu_mobile -->
+    <div id="menu_mobile">
+        <div id="menu_icon_x">
+            <div class="menu_icon_bar_x"></div>
+            <div class="menu_icon_bar_x"></div>
+            <div class="menu_icon_bar_x"></div>
+        </div>
+        <h2><span>WONDER</span> PLACE</h2>
+        <ul>
+            <li class="under_line">COMPANY</li>
+            <li class="under_line">RECRUIT</li>
+            <li class="under_line">BRAND</li>
+            <li class="under_line">SHOP</li>
+            <li class="under_line">CONTACT</li>
+        </ul>
+        <div id="menu_mobile_sns">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+        </div>
+    </div>
+    <!-- main -->
+    <main>
+        <div id="main_text">
+            <p>01 N0.1</p>
+            <p>02 패션 라이프 스타일 편집숍</p>
+            <p>03 원더플레이스</p>
+            <p>A PLACE OF WONDER</p>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./image/bg01.jpg" alt="bg01.jpg" /></div>
+                <div class="swiper-slide"><img src="./image/bg02.jpg" alt="bg02.jpg" /></div>
+                <div class="swiper-slide"><img src="./image/bg03.jpg" alt="bg03.jpg" /></div>
             </div>
-        </header>
-        <!-- picnic -->
-        <section id="picnic">
-            <h2>MGC와 즐기는 봄날의 피크닉</h2>
-            <h3>Fruit 주스프링</h3>
-            <p>메가MGC커피 봄 시즌 메뉴</p>
-            <p>지금 메가MGC커피에서 상큼하고 든든한 봄 신상 메뉴를 만나보세요</p>
-            <div class="button_yellow">메뉴 더보기</div>
-            <div id="product_wrap">
-                <div class="product">
-                    <img
-                        src="./image/20220630181211_1656580331105_8H9ebY4_sA.jpg"
-                        alt="Strawberry Banana Juice">
-                    <div class="product_textbox">
-                        <h4>딸기바나나주스</h4>
-                        <p>Strawberry-Banana Juice</p>
-                        <p>상큼한 딸기와 부드러운 바나나가 만나, 새콤달곰한 매력이 살아 있는 과일 음료.</p>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- about -->
+        <section id="about">
+            <div id="about_text">
+                <h3>ABOUT</h3>
+                <h4>MAKE FUN PLACE</h4>
+                <h4>WONDER PLACE</h4>
+                <p>국내외 'UP & COMING' 브랜드, 'FRESH & UNIQUE' <br />신진 디자이너 레이블, 'TRENDY & SEASONAL ESSENTIAL' <br />패션 제품
+                    등
+                    다양한 'FASHION TO
+                    LIFESTYLE' 아이템을 <br />함께 구성하여 보다 새로운 즐거움을 줄 수 있는 공간을 추구 합니다.</p>
+                <button class="black_button">MORE<div class="line"></div></button>
+            </div>
+            <img src="./image/pic_about1.png" alt="pic_about1" />
+        </section>
+        <!-- brand -->
+        <section id="brand">
+            <div id="brand_text">
+                <h3>BRAND</h3>
+                <h4>WONDER PLACE
+                    BRANDS</h4>
+                <p>우리는, 원더플레이스만의 새로운 시각으로 패션 브랜드 전개 및 새로운 콘텐츠와 지속 가능한 브랜드 가치를 제공합니다.<br />
+                    우리는, 패션을 통해 고객이 원하는 상품을, 고객이 원하는 시간과 장소에서 고객이 만족하는 합리적인 가격으로, 고객의 더 높은 만족을 위하여 즐겁고 합리적인 소비생활에 기여합니다.
+                </p>
+            </div>
+            <div id="card_wrap">
+                <div class="card">
+                    <img src="./image/bg_gola.jpg" alt="gola" />
+                    <div class="card_textbox">
+                        <h4>골라</h4>
+                        <p>골라는 1905년 영국 레스터 지방에서 탄생한 골라 클래식은 영국 헤리티지와 라이프스타일을 담은 브랜드입니다.</p>
                     </div>
                 </div>
-                <div class="product">
-                    <img
-                        src="./image/20230102162433_1672644273585_S16nDUXebH.jpg"
-                        alt="Strawberry Juice">
-                    <div class="product_textbox">
-                        <h4>딸기주스</h4>
-                        <p>Strawberry-Banana Juice</p>
-                        <p>새콤달콤한 딸기주스에 피쉬 콜라겐을 더해 건강한 블렌딩 주스</p>
+                <div class="card">
+                    <img src="./image/bg_comoninoz.jpg" alt="comoninoz" />
+                    <div class="card_textbox">
+                        <h4>꼬모니노즈</h4>
+                        <p>꼬모니노즈는 'EASY & COZY'라는 슬로건과 함께 더 많은 것을 느끼고 조금 덜 생각할 수 있는 미니멀 라이프를 생각하며 단순함 속에서도 작은 즐거움을 찾을 수
+                            있는
+                            옷을
+                            만드는 브랜드입니다.</p>
                     </div>
                 </div>
-                <div class="product">
-                    <img src="./image/20230302111618_1677723378962_8ZmGJRwoRy.jpg" alt="Meat pie">
-                    <div class="product_textbox">
-                        <h4>미트파이</h4>
-                        <p>Meat pie</p>
-                        <p>풍미 가득한 치즈와 바비큐 소스로 맛을 낸 소고기를 듬뿍 담은 미트파이</p>
+                <div class="card">
+                    <img src="./image/bg_w.standard.jpg" alt="w.standard" />
+                    <div class="card_textbox">
+                        <h4>더블유스탠다드</h4>
+                        <p>일상에서 입는 즐거움을 찾을 수 있도록, 새롭게 변화하는 트렌드 아이템을 다양한 이들이 쉽게 접근할 수 있게 풀어내는 캐주얼웨어 브랜드입니다.</p>
                     </div>
                 </div>
-                <div class="product">
-                    <img
-                        src="./image/20230302112058_1677723658262_kWTYa4fhBz.jpg"
-                        alt="Shine Muscat-Kale Juice">
-                    <div class="product_textbox">
-                        <h4>샤인머스캣그린주스</h4>
-                        <p>Shine Muscat-Kale Juice</p>
-                        <p>달콤한 샤인머스캣과 케일이 만난 싱그러운 주스에 칼슘을 더해 건강한 블렌딩 주스</p>
+                <div class="card">
+                    <img src="./image/bg_deliccent.jpg" alt="deliccent" />
+                    <div class="card_textbox">
+                        <h4>델리센트</h4>
+                        <p>골라는 1905년 영국 레스터 지방에서 탄생한 골라 클래식은 영국 헤리티지와 라이프스타일을 담은 브랜드입니다.</p>
                     </div>
                 </div>
-                <div class="product">
-                    <img
-                        src="./image/20230302111432_1677723272298_ncVUgB2hMm.jpg"
-                        alt="Korean Street Dessert Pack ii">
-                    <div class="product_textbox">
-                        <h4>모락모락간식꾸러미</h4>
-                        <p>Korean Street Dessert Pack ii</p>
-                        <p>맛있는 김이 모락모락! 사이좋게 하나씩 팥붕&슈붕, 폭신한 찐빵과 앙버터 호두과자를 한 번에 즐길 수 있는 간식꾸러미</p>
+                <div class="card">
+                    <img src="./image/bg_outdoor_products.jpg" alt="outdoor_products" />
+                    <div class="card_textbox">
+                        <h4>아웃도어 프로덕츠</h4>
+                        <p>Altshule brohers가 1973년에 설립하였으며, 장소와 계절에 관계없이 편안함과 새로운 변화를 추구하는 21세기 라이프스타일 브랜드입니다.</p>
                     </div>
                 </div>
-                <div class="product">
-                    <img
-                        src="./image/20230302111940_1677723580990_DVocCFWWgr.jpg"
-                        alt="Red Orange-Grapefruit Juice">
-                    <div class="product_textbox">
-                        <h4>레드오렌지자몽주스</h4>
-                        <p>Red Orange-Grapefruit Juice</p>
-                        <p>엄선된 시칠리아 레드오렌지와 자몽이 만난 상큼한 주스에 프로바이오틱스를 더해 건강한 블렌딩 주스</p>
+                <div class="card">
+                    <img src="./image/bg_ocean_pacific.jpg" alt="ocean_pacific" />
+                    <div class="card_textbox">
+                        <h4>오션퍼시픽</h4>
+                        <p>오션퍼시픽은 1972년 서퍼들의 요구를 만족시키는 어패럴 브랜드를 시작으로 현재는 서프 컬쳐를 비롯한 시티&비치 라이프 스타일을 스트릿으로 옮긴 다양한 스타일을
+                            선보이고 있는
+                            브랜드입니다.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <!--start-up_cost-->
-        <section id="start-up_cost">
-            <div id="start_up_cost_text">
-                <h2>거품 없는 창업비용</h2>
-                <h3>
-                    FRANCHISE<br/>
-                    MEGA MGC COFFEE
-                </h3>
-                <p>
-                    <span>5,817</span>만원</p>
-                <p>지금, 메가MGC커피에서 창업성공 스토리를 경험해보세요.</p>
-                <p>합리적인 창업비용과 다양한 경험을 바탕으로, 다양한 노하우를 전수하여 창업 성공을 약속듭니다.</p>
+        <!-- contact -->
+        <section id="contact">
+            <h3>CONTACT</h3>
+            <h4>고객의<br />
+                패션 라이프를 책임질<br />
+                원더플레이스와 함께</h4>
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.081613148929!2d127.05124061179075!3d37.54475852525926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca496e6d0599d%3A0xf7b313363ad064ab!2z7ISc7Jq47Yq567OE7IucIOyEseuPmeq1rCDshLHsiJjsnbzroZw26ri4IDMz!5e1!3m2!1sko!2skr!4v1683118453559!5m2!1sko!2skr"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
-            <!-- youtube -->
-            <iframe
-                width="350"
-                height="185"
-                src="https://www.youtube.com/embed/Ppe5NIRco8A"
-                title="메가MGC커피 창업 정보 안내"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen="allowfullscreen"
-                id="iframe_test"></iframe>
-            <!-- //youtube -->
+                <p>서울 성동구 성수일로6길 33 (성수동2가) 아연디지털타워 5층</p>
+                <p>help@wonderplace.co.kr</p>
+                <button class="black_button">GOOGLE MAP<div class="line"></div></button>
+           
         </section>
-        <!-- story -->
-        <section id="story">
-            <h2>메가MCG커피 이야기</h2>
-            <h3>MEGA SIZE<br>
-                & 2 SHOT
-            </h3>
-            <p>
-                100% 프리미엄 아라비카 원두를 로스팅하여, 깊고 부드러운 커피와 빅 사이즈로 구성된 다양한 음료를 합리적인 가격으로 제공합니다.
-            </p>
-            <p>
-                좋은 품질의 재료를, 합리적인 가격으로 제공하여 좋은 품질의 음료를 저렴한 가격으로 만나보실 수 있습니다.
-
-            </p>
-            <div id="main_mega">
-                <div class="button_yellow">브랜드소개</div>
-                <div class="button_yellow">창업문의</div>
+        <!-- contact_pc -->
+        <section id="contact_pc">
+            <div id="contact_box">
+                <h3>CONTACT</h3>
+                <h4>고객의<br />
+                    패션 라이프를 책임질<br />
+                    원더플레이스와 함께</h4>
+                <p>서울 성동구 성수일로6길 33 (성수동2가) 아연디지털타워 5층</p>
+                <p>help@wonderplace.co.kr</p>
+                <button class="black_button">GOOGLE MAP<div class="line"></div></button>
             </div>
-            <img src="./image/main_mega.jpg" alt="mega.jpg">
+            <div id="map_pc">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.081613148929!2d127.05124061179075!3d37.54475852525926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca496e6d0599d%3A0xf7b313363ad064ab!2z7ISc7Jq47Yq567OE7IucIOyEseuPmeq1rCDshLHsiJjsnbzroZw26ri4IDMz!5e1!3m2!1sko!2skr!4v1683118453559!5m2!1sko!2skr"
+                    width="100%" height="540" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
         </section>
-        <!-- event -->
-        <section id="event">
-            <h2>메가MGC커피 소식</h2>
-            <h3>MEGA EVENT</h3>
-            <div id="article_wrap">
-                <div class="article">
-                    <div><img src="./image/20230403110028_1697292101120_sbeYf4TRAF.jpg " alt="son"/></div>
-                    <div class="article_text">
-                        <p>4월 메가MGC커피X 하나 원큐</p>
-                        <p></p>
-                        <p>2023-04-03
-                        </p>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <div><img src="./image/20230228194347_1694356837362_d8cZMIutPb.jpg" alt="spring"/></div>
-                    <div class="article_text">
-                        <p>봄 시즌'오픈 기념 이벤트</p>
-                        <p></p>
-                        <p>2023-02-28</p>
-                    </div>
-                </div>
-
-                <div class="article">
-                    <div><img src="./image/20230228143735_1694338282021_1G6IX7EFfe.jpg" alt="americano"/></div>
-                    <div class="article_text">
-                        <p>KT 멤버십 VIP 초이스</p>
-                        <p>[유의사항]▶HOT/ICE 아메리카노..</p>
-                        <p>2023-02-28</p>
-                    </div>
-                </div>
+    </main>
+    <!-- footer -->
+    <footer id="footer_mo">
+        <div id="footer_mo_sns">
+            <p>Facebook</p>
+            <p>instagram</p>
+            <p>Youtube</p>
+        </div>
+        <table id="table_mo">
+            <tr>
+                <th>TEL</th>
+                <td>1668-3508</td>
+            </tr>
+            <tr>
+                <th>E-MAIL</th>
+                <td>help@wonderplace.co.kr</td>
+            </tr>
+            <tr>
+                <th>ADDRESS</th>
+                <td>04782 서울특별시 성동구 성수일로6길 33 (성수동2가) 아연디지털타워 5층</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>개인정보처리방침</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>대표이사 : 김영한</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td>사업자 등록번호 : 201-86-20597</td>
+            </tr>
+        </table>
+        <p>COPYRIGHT <span>© WONDERPLACE </span>ALL RIGHTS RESERVED.</p>
+    </footer>
+    <!-- footer_pc -->
+    <footer id="footer_pc">
+        <div id="footer_box">
+            <div id="footer_pc_sns">
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Youtube</p>
             </div>
+            <table id="table_pc">
+                <tr>
+                    <th>TEL</th>
+                    <td>1668-3508</td>
+                    <td>개인정보처리방침</td>
+                </tr>
+                <tr>
+                    <th>E-MAIL</th>
+                    <td>help@wonderplace.co.kr</td>
+                    <td>대표이사 : 김영한</td>
+                </tr>
+                <tr>
+                    <th>ADDRESS</th>
+                    <td>04782 서울특별시 성동구 성수일로6길 33 (성수동2가)<br />아연디지털타워 5층</td>
+                    <td>사업자 등록번호 : 201-86-20597</td>
+                </tr>
+            </table>
+        </div>
+        <p>COPYRIGHT <span>© WONDERPLACE</span> ALL RIGHTS RESERVED.</p>
+    </footer>
 
-            <!-- article_wrap_pc -->
-            <div id="article_wrap_pc">
-                <div class="article_pc">
-                    <div><img src="./image/20230403110028_1697292101120_sbeYf4TRAF.jpg " alt="son"/></div>
-                    <div class="article_text_pc">
-                        <p>4월 메가MGC커피X 하나 원큐</p>
-                        <p></p>
-                        <p>2023-04-03
-                        </p>
-                    </div>
-                </div>
-
-                <div class="article_pc">
-                    <div><img src="./image/20230228194347_1694356837362_d8cZMIutPb.jpg" alt="spring"/></div>
-                    <div class="article_text_pc">
-                        <p>봄 시즌'오픈 기념 이벤트</p>
-                        <p></p>
-                        <p>2023-02-28</p>
-                    </div>
-                </div>
-
-                <div class="article_pc">
-                    <div><img src="./image/20230228143735_1694338282021_1G6IX7EFfe.jpg" alt="americano"/></div>
-                    <div class="article_text_pc">
-                        <p>KT 멤버십 VIP 초이스</p>
-                        <p>[유의사항]▶HOT/ICE 아메리카노 1~2잔 등 4,000원 미만<br/>도 이용...</p>
-                        <p>2023-02-28</p>
-                    </div>
-                </div>
-            </div>
-            <!-- //article_wrap_pc -->
-
-            <p>전체 매장 및 각 매장에서 다양한 이벤트가 진행중 입니다.</p>
-            <div class="button_yellow_center">이벤트 더보기</div>
-        </section>
-        <section id="menu">
-            <div id="mobile_menu_icon_x">
-                <div class="mobile_menu_icon_bar_x"></div>
-                <div class="mobile_menu_icon_bar_x"></div>
-                <div class="mobile_menu_icon_bar_x"></div>
-            </div>
-                <img src="./image/logo_w.png" alt="logo">
-                <!-- <ul>
-                    <li>메가스토리</li>
-                    <li>
-                        <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                        </ul>
-                    </li>
-                </ul> -->
-                <ul>
-                    <a href="#" class="main_menu">
-                        <li>
-                            <p>메가스토리</p>
-                            <p class="arrow">▶</p>
-                        </li>
-                    </a>
-                        <ul class="sub_menu">
-                            <li>브랜드</li>
-                            <li>BI</li>
-                            <li>오시는 길</li>
-                        </ul>
-                    <a href="#" class="main_menu">
-                        <li>
-                            <p>메뉴소개</p>
-                            <p class="arrow">▶</p>
-                        </li>
-                    </a>
-                            <ul class="sub_menu">
-                            <li>음료</li>
-                            <li>푸드</li>
-                            <li>상품</li>
-                            </ul>
-                    <a href="#" class="main_menu">
-                        <li>
-                            <p>매장</p>
-                            <p class="arrow">▶</p>
-                        </li>
-                    </a>
-                        <ul class="sub_menu">
-                        <li>매장찾기</li>
-                        </ul>
-                    <a href="#" class="main_menu">
-                        <li>
-                            <p>창업안내</p>
-                            <p class="arrow">▶</p>
-                        </li>
-                    </a>
-                        <ul class="sub_menu">
-                        <li>개설비용</li>
-                        <li>인테리어</li>
-                        <li>창업문의</li>
-                        </ul>
-                    <a href="#" class="main_menu">
-                        <li>
-                            <p>메가소식</p>
-                            <p class="arrow">▶</p>
-                        </li>
-                    </a>
-                        <ul class="sub_menu">
-                        <li>공지사항</li>
-                        <li>이벤트</li>
-                        <li>FAQ</li>
-                        <li>고객의 소리</li>
-                        </ul>
-                </ul>
-        </section>
-        <!-- footer -->
-        <footer>
-            <div id="tos">
-                <p>이용약관</p>
-                <p>개인정보취급방침</p>
-            </div>
-            <div id="information">
-                <div>
-                    <img src="./image/logo_w.png" alt="logo">
-                </div>
-                <div>
-                    <img src="./image/sns_blog.png" alt="blog"/>
-                    <img src="./image/sns_facebook.png" alt="facebook"/>
-                    <img src="./image/sns_instagram.png" alt="instagram"/>
-                </div>
-                <div>
-                    <p>
-                        <span>주식회사 앤하우스</span>
-                        대표자 김대영본사대표번호 02-335-0656FAX 02-325-5199</p>
-                    <p>사업자등록번호 105-87-51367서울특별시 강남구 강남대로 518 11층, 13층 (주)앤하우스</p>
-                    <p>개인정보보호 관리책임자 이호민</p>
-                </div>
-            </div>
-        </footer>
-        <script src="./script.js"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
 
 </html>

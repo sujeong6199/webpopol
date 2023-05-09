@@ -1,31 +1,31 @@
-let mobileMenuIcon = document.querySelector("#mobile_menu_icon");
-let mobileMenuIconX = document.querySelector("#mobile_menu_icon_x");
-let menu = document.querySelector("#menu");
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  
+let menuMobile = document.querySelector("#menu_mobile");
+let menuIcon = document.querySelector("#menu_icon");
+let menuIconX = document.querySelector("#menu_icon_x");
 
-mobileMenuIcon.addEventListener("click",()=>{
-    menu.style.transform ="translate(0%)";
-});
-mobileMenuIconX.addEventListener("click",()=>{
-    menu.style.transform ="translate(100%)";
+menuIcon.addEventListener("click",()=>{
+    menuMobile.style.visibility = "visible";
+    menuMobile.style.opacity = 1;
 });
 
-let mainMenu = document.querySelectorAll(".main_menu");
-let subMenu = document.querySelectorAll(".sub_menu");
-let arrow = document.querySelectorAll(".arrow");
-mainMenu.forEach((element,index)=>{
-    element.addEventListener("click",()=>{
-        if (subMenu[index].style.display == "block") {
-            subMenu[index].style.display = "none";
-            subMenu[index].style.opacity = "0";
-            subMenu[index].style.visibility = "hidden";
-            mainMenu[index].style.color = "#fff";
-            arrow[index].innerHTML = "▶";
-        } else {
-            subMenu[index].style.display = "block";
-            subMenu[index].style.opacity = "1";
-            subMenu[index].style.visibility = "visible";
-            mainMenu[index].style.color = "#fdd000";
-            arrow[index].innerHTML = "▼"
-        }
-    });
+menuIconX.addEventListener("click",()=>{
+    menuMobile.style.visibility = "hidden";
+    menuMobile.style.opacity = 0;
 });
